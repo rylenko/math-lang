@@ -7,13 +7,8 @@ import java.util.Stack;
 import ru.rylenko.context.Context;
 
 public class MapStackContext implements Context {
-	private Stack<Double> stack;
-	private Map<String, Double> variables;
-
-	public MapStackContext() {
-		stack = new Stack<Double>();
-		variables = new HashMap<String, Double>();
-	}
+	private final Stack<Double> stack = new Stack<Double>();
+	private final Map<String, Double> variables = new HashMap<String, Double>();
 
 	@Override
 	public Double getVariable(String name) {

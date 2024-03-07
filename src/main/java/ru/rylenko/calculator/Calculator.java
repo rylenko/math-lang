@@ -14,10 +14,10 @@ import ru.rylenko.command.CommandFactoryLoadingException;
 import ru.rylenko.context.Context;
 
 public class Calculator {
-	private Context context;
-	private PrintStream errorsStream;
-	private CommandFactory factory;
-	private BufferedReader reader;
+	final private Context context;
+	final private PrintStream errorsStream;
+	final private CommandFactory factory;
+	final private BufferedReader reader;
 
 	public Calculator(
 		Context context,

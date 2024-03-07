@@ -23,3 +23,7 @@ With file:
 ```
 $ make run ARGS="<path>"
 ```
+
+# Todo
+
+- Abstract `ValidatedCommand` with args count and stack size validation.

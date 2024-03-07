@@ -18,7 +18,7 @@ public class CommandFileFactory implements CommandFactory {
 	private static final String PATH =
 		"/ru/rylenko/command/CommandFileFactory.properties";
 
-	private Properties aliases = new Properties();
+	private final Properties aliases = new Properties();
 
 	@Override
 	public Command create(String command) throws CommandCreationException {
